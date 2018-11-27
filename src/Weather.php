@@ -16,7 +16,7 @@ class Weather
     protected $key;
     protected $guzzleOptions = [];
 
-    public function __construct(string $key)
+    public function __construct($key)
     {
         $this->key = $key;
     }
@@ -42,7 +42,7 @@ class Weather
         $query = array_filter([
             'key' => $this->key,
             'city' => $city,
-            'output' => \strtolower($format),
+            'output' => \strtolower($format), 
             'extensions' =>  \strtolower($type),
         ]);
 
