@@ -1,0 +1,28 @@
+{
+    "name": "tanren1234\/weather",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tanren1234",
+            "email": "672019554@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.4",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tanren1234\\Weather\\": "./src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tanren1234\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
